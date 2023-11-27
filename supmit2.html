@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sup apply</title>
+    <link rel="stylesheet" href="employee.css">
+    <!-- Bootstrap CSS library -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <!-- jQuery library -->
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+   <!-- JS library -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled JavaScript library -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+        <!-- ----------------------------------------------------------------
+     ----------------------------------------------------------------------- -->
+       <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+       <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css">
+       <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css">
+       <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/colors.min.css">
+       <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap.min.css">
+       <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url(photo/istockphoto-1397028825-612x612.jpg);">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" style="background-color: rgb(255, 255, 255); height: 97%; position: fixed; border:10px; border-radius: 30px; margin-top: 10px;" >
+                <a class="navbar-brand" style=" font-weight: bolder; font-size: 25px; height: 70px; margin-top:5px;  position: fixed;" href="#"><span><img src="photo/systems.png" style="width: 110px; height: 60px; margin-left: 40px;"></span> </a>
+                  <div class="list-group" style="position: fixed; margin-top: 85px;">
+                      <div class="post">
+                        <i class="fa-solid fa-arrow-trend-up fa-beat" style="color: #000000;"></i><a href="dashemployee.html" class="tap" > DashBoard</a>
+                      </div>
+                      <!-- <div class="post">
+                        <i class="fa-solid fa-users fa-beat" style="color: #000000;"></i><a href="c:\Users\dell\Desktop\employee system\employees.html" class="tap"> EMPLOYEES</a>
+                      </div> -->
+                      <div class="post">
+                        <i class="fa-regular fa-file fa-beat" style="color: #000000;"></i><a href="attendance2.html" class="tap"> ATTENDANCE</a>
+                      </div>
+                      <div class="post">
+                        <i class="fa-solid fa-money-bills fa-beat" style="color: #000000;"></i><a href="expances2.html" class="tap"> EXPENSES</a>
+                      </div>
+                      <!-- <div class="post">
+                      <img src="c:\Users\dell\Desktop\employee system\photo\file-earmark.svg" style="height: 25px; width: 25px;" style="height: 30px;"><a href="#" class="tap"> PROJECTS</a>
+                      </div> -->
+                      <div class="post">
+                        <i class="fa-solid fa-business-time fa-beat" style="color: #000000;"></i></i><a href="time req2.html" class="tap"> Time Out Requests</a>
+                      </div>
+                      <div class="post">
+                        <i class="fa-sharp fa-regular fa-file-lines fa-beat" style="color: #000000;"></i><a href="#" class="tap"> Projects</a>
+                      </div>
+                      <!-- <div class="post">
+                        <i class="fa-solid fa-user-plus fa-beat" style="color: #000000;"></i><a href="c:\Users\dell\Desktop\employee system\application.html" class="tap" style="font-size: 14px;"> EMPLOYMENT APPLICATION</a>
+                      </div> -->
+                      <!-- <div class="post">
+                      <img src="c:\Users\dell\Desktop\employee system\photo\hand-index.svg"  style="height: 25px; width: 25px;" style="height: 30px;"><a href="c:\Users\dell\Desktop\employee system\register.html" class="tap"> REGISTER</a>
+                      </div> -->
+                      <div class="post">
+                        <i class="fa-solid fa-right-from-bracket fa-beat" style="color: #000000;"></i><a href="login.html" class="tap"> Log Out</a>
+                      </div>
+                    </div>
+              </div>
+          <!--  -->
+            <div class="col-10" style=" height: 100%; margin-top: 10px; margin-left: 253px;" >
+                <div class=" nav navbar-expand-lg" style="margin-top: 10px; background-color: #c3c2c26b; border: 0px; border-radius: 6px; padding: 10px;">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent-555"> 
+
+
+
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+                      <form class="form-inline  " style="margin-right: 10px;">
+                        <input class="form-control form-control-sm  w-85" style="margin-right: 10px;" type="text" placeholder="Search" aria-label="Search">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                      </form>
+                      <li class="nav-item avatar">
+                        <a class="nav-link p-0" href="Edit profile employee.html">
+                          <img src="c:\Users\dell\Desktop\employee system\photo\3b2f3b702d81fbab4d5806422988299f.jpg" class="rounded-circle z-depth-0" alt="avatar image" height="35">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </div>
+        </div>
+        <div class="container-fluid">
+          <div class="container-lg" style="max-width: 100%;">
+            <div class="table-responsive" style="margin-left: 17px;">
+                <div class="table-wrapper" style="margin-left: 250px;">
+                    <div class="table-title">
+                        <div class="row">
+                            <div class="col-sm-8"><h2>Employee <b>Details</b></h2></div>
+                            <div class="col-sm-4">
+                                <button type="button" class="btnnn  add-new"><i class="fa fa-plus"></i> Add New</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Department</th>
+                                <th>Phone</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>Administration</td>
+                                <td>(171) 555-2222</td>
+                                <td>
+                                    <a class="add" title="Add" data-toggle="tooltip"><i class="fa-solid fa-square-plus" style="color: #0dd33f;"></i></a>
+                                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="fa-solid fa-pen" style="color: #000000;"></i></a>
+                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="fa-solid fa-trash" style="color: #ea0606;"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Peter Parker</td>
+                                <td>Customer Service</td>
+                                <td>(313) 555-5735</td>
+                                <td>
+                                  <a class="add" title="Add" data-toggle="tooltip"><i class="fa-solid fa-square-plus" style="color: #0dd33f;"></i></a>
+                                  <a class="edit" title="Edit" data-toggle="tooltip"><i class="fa-solid fa-pen" style="color: #000000;"></i></a>
+                                  <a class="delete" title="Delete" data-toggle="tooltip"><i class="fa-solid fa-trash" style="color: #ea0606;"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fran Wilson</td>
+                                <td>Human Resources</td>
+                                <td>(503) 555-9931</td>
+                                <td>
+                                  <a class="add" title="Add" data-toggle="tooltip"><i class="fa-solid fa-square-plus" style="color: #0dd33f;"></i></a>
+                                  <a class="edit" title="Edit" data-toggle="tooltip"><i class="fa-solid fa-pen" style="color: #000000;"></i></a>
+                                  <a class="delete" title="Delete" data-toggle="tooltip"><i class="fa-solid fa-trash" style="color: #ea0606;"></i></a>
+                                </td>
+                            </tr>      
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>        
+          
+    </div>
+
+
+
+    <script>
+      $(document).ready(function(){
+	// $('[data-toggle="tooltip"]').tooltip();*********************************************
+	var actions = $("table td:last-child").html();
+	// Append table with add row form on add new button click
+    $(".add-new").click(function(){
+		$(this).attr("disabled", "disabled");
+		var index = $("table tbody tr:last-child").index();
+        var row = '<tr>' +
+            '<td><input type="text" class="form-control" name="name" id="name"></td>' +
+            '<td><input type="text" class="form-control" name="department" id="department"></td>' +
+            '<td><input type="text" class="form-control" name="phone" id="phone"></td>' +
+			'<td>' + actions + '</td>' +
+        '</tr>';
+    	$("table").append(row);		
+		$("table tbody tr").eq(index + 1).find(".add, .edit").toggle();
+        // $('[data-toggle="tooltip"]').tooltip();********************************************
+    });
+	// Add row on add button click
+	$(document).on("click", ".add", function(){
+		var empty = false;
+		var input = $(this).parents("tr").find('input[type="text"]');
+        input.each(function(){
+			if(!$(this).val()){
+				$(this).addClass("error");
+				empty = true;
+			} else{
+                $(this).removeClass("error");
+            }
+		});
+		$(this).parents("tr").find(".error").first().focus();
+		if(!empty){
+			input.each(function(){
+				$(this).parent("td").html($(this).val());
+			});			
+			$(this).parents("tr").find(".add, .edit").toggle();
+			$(".add-new").removeAttr("disabled");
+		}		
+    });
+	// Edit row on edit button click
+	$(document).on("click", ".edit", function(){		
+        $(this).parents("tr").find("td:not(:last-child)").each(function(){
+			$(this).html('<input type="text" class="form-control" value="' + $(this).text() + '">');
+		});		
+		$(this).parents("tr").find(".add, .edit").toggle();
+		$(".add-new").attr("disabled", "disabled");
+    });
+	// Delete row on delete button click
+	$(document).on("click", ".delete", function(){
+        $(this).parents("tr").remove();
+		$(".add-new").removeAttr("disabled");
+    });
+});
+    </script>
+</body>
+</html>

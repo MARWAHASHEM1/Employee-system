@@ -1,0 +1,94 @@
+:root {
+	--blue: hsl(201, 100%, 14%,.95);
+	--red: hsl(0, 69%, 50%,.8);
+	--orange: hsl(31, 100%, 48%);
+	--yellow: hsl(40, 97%, 64%);
+	--flesh: hsl(51, 55%, 82%);
+}
+
+.container{
+    background-color: rgb(53 194 150 / 37%);
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+	margin-bottom: 20px;
+	width: 67% !important;
+}
+.row{
+    padding: 10px;
+    margin: 5px;
+}
+.col-6{
+   padding: 5px;
+}
+
+select{
+	height: 40px;
+}
+[type="radio"] {
+	width: 18px;
+	height: 18px;
+	position: relative;
+	top:3px;
+}
+[type="checkbox"] {
+	width: 18px;
+	height: 18px;
+	position: relative;
+	top:3px;
+}
+
+form p,select,textarea,label,button{
+	margin:10px 0px 0px 0px;
+}
+#name-label,#email-label,#number-label{
+	margin:10px 0px 10px 0px;
+}
+
+.vis1 {
+	font-size:0.9rem;
+	font-weight:400;
+	/* font-family: 'Noto Sans JP', sans-serif; */
+    padding: 10px 0px 10px 0px;
+    border: 0px;
+    width: 400px;
+}
+.vis2 {
+	font-size:1.1rem;
+	font-weight: 450;
+	/* font-family: 'Noto Sans JP', sans-serif; */
+}
+.vis3{
+	font-size:1.2rem;
+	font-weight: 500;
+	/* font-family: 'Roboto', sans-serif; */
+}
+.vis4{
+	font-size:1.3rem;
+	font-weight: 550;	
+	/* font-family: 'Roboto', sans-serif; */
+}
+[placeholder] {
+	font-size:1.05rem;
+	font-weight:400;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+option {
+	font-size:1.05rem;
+	font-weight:400;
+	/* font-family: 'Noto Sans JP', sans-serif; */
+}
+input,select,textarea {
+	outline: none;
+	transition: box-shadow 0.1s;
+	transition-timing-function: ease-in-out;
+}
+
+
+input,select,textarea {
+	border-radius: 4px 4px;	
+}
+

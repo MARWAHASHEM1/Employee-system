@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees page</title>
+    <link rel="stylesheet" href="pages.css">
+ <!-- Bootstrap CSS library -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+     crossorigin="anonymous"></script>
+<!-- JS library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+     crossorigin="anonymous"></script>
+ <!-- Latest compiled JavaScript library -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+     crossorigin="anonymous"></script>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+     <!-- ----------------------------------------------------------------
+  ----------------------------------------------------------------------- -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-image: url(photo/istockphoto-1397028825-612x612.jpg);">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-2" style="background-color: rgb(255, 255, 255); height: 97%; position: fixed; border:10px; border-radius: 30px; margin-top: 10px;" >
+            <a class="navbar-brand" style=" font-weight: bolder; font-size: 25px; height: 70px; margin-top:5px;  position: fixed;" href="#"><span><img src="photo/systems.png" style="width: 110px; height: 60px; margin-left: 40px;"></span> </a>
+              <div class="list-group" style="position: fixed; margin-top: 70px;">
+                  <div class="post">
+                    <i class="fa-solid fa-arrow-trend-up fa-beat" style="color: #000000;"></i><a href="dashboard.html" class="tap"> DashBoard</a>
+                  </div>
+                  <div class="post">
+                    <i class="fa-solid fa-users fa-beat" style="color: #000000;"></i><a href="c:\Users\dell\Desktop\employee system\employees.html" class="tap"> EMPLOYEES</a>
+                  </div>
+                  <div class="post">
+                    <i class="fa-regular fa-file fa-beat" style="color: #000000;"></i><a href="c:\Users\dell\Desktop\employee system\attendance.html" class="tap"> ATTENDANCE</a>
+                  </div>
+                  <div class="post">
+                    <i class="fa-solid fa-money-bills fa-beat" style="color: #000000;"></i><a href="expense requests.html" class="tap"> EXPENSES</a>
+                  </div>
+                  <!-- <div class="post">
+                  <img src="c:\Users\dell\Desktop\employee system\photo\file-earmark.svg" style="height: 25px; width: 25px;" style="height: 30px;"><a href="#" class="tap"> PROJECTS</a>
+                  </div> -->
+                  <div class="post">
+                    <i class="fa-solid fa-business-time fa-beat" style="color: #000000;"></i></i><a href="request.html" class="tap"> Time Out Requests</a>
+                  </div>
+                  <div class="post">
+                    <i class="fa-sharp fa-regular fa-file-lines fa-beat" style="color: #000000;"></i><a href="c:\Users\dell\Desktop\employee system\supmited app.html" class="tap"> Recruitments</a>
+                  </div>
+                  <!-- <div class="post">
+                    <i class="fa-solid fa-user-plus fa-beat" style="color: #000000;"></i><a href="c:\Users\dell\Desktop\employee system\application.html" class="tap" style="font-size: 14px;"> EMPLOYMENT APPLICATION</a>
+                  </div> -->
+                  <!-- <div class="post">
+                  <img src="c:\Users\dell\Desktop\employee system\photo\hand-index.svg"  style="height: 25px; width: 25px;" style="height: 30px;"><a href="c:\Users\dell\Desktop\employee system\register.html" class="tap"> REGISTER</a>
+                  </div> -->
+                  <div class="post">
+                    <i class="fa-solid fa-right-from-bracket fa-beat" style="color: #000000;"></i><a href="login.html" class="tap"> Log Out</a>
+                  </div>
+                </div>
+          </div>
+          <!-- ---------------------------------------------------- -->
+            <div class="col-10" style=" height: 100%; margin-top: 10px; margin-left: 253px; " >
+                <div class=" nav navbar-expand-lg" style="margin-top: 10px; background-color: rgb(245 244 244 / 50%); border: 0px; border-radius: 6px; padding: 10px;">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent-555">           
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+                      <form class="form-inline  " style="margin-right: 10px;">
+                        <input class="form-control form-control-sm  w-85" style="margin-right: 10px;" type="text" placeholder="Search" aria-label="Search">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                      </form>
+                      <li class="nav-item avatar">
+                        <a class="nav-link p-0" href="#">
+                          <img src="c:\Users\dell\Desktop\employee system\photo\3b2f3b702d81fbab4d5806422988299f.jpg" class="rounded-circle z-depth-0" alt="avatar image" height="35">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="container" style="padding-right: 310px;margin-left: 164px; margin-right: 0px;padding-left: 139px;">    
+            <div class="row" >
+                <div class="col-2" ><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://images.ctfassets.net/vztl6s0hp3ro/2Zg9Mth4qC5EGGWHoJIy9T/3f0dbdf8884231a3e9e7998c514cc1fa/Unleash-employee-potential-with-personal-professional-development-examples.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button  class="message" data-toggle="modal" data-target="#exampleModal">Massage</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button" id="btnn">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://media.licdn.com/dms/image/C4D03AQGBwiO9ozpYag/profile-displayphoto-shrink_400_400/0/1606229866037?e=1702512000&v=beta&t=W2yJSmGgBYh6Niqd4Ko6lMGA_PP0UliyXD70WHKE0t0" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                 <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://media.licdn.com/dms/image/D4E03AQHa3tLNPvog0A/profile-displayphoto-shrink_400_400/0/1676372345322?e=1702512000&v=beta&t=QnzqJK41WvW-pDvpGoJ4Lu4gLaE21C6arofnLjhh1Bs" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                         <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div> 
+            </div>
+            <div class="row">
+                
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://www.talintinternational.com/wp-content/uploads/2022/08/Bradley-Burgoyne-head-of-talent-at-Digits.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://secure.gravatar.com/avatar/0c0439263cf8ff466846b6220ef05948?s=300&d=mm&r=g" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://imd.co.uk/wp-content/uploads/2023/03/mdu-avatar.png" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+            </div>
+            <div class="row">
+                
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://media.licdn.com/dms/image/C4E03AQHduRHgtYkLBQ/profile-displayphoto-shrink_400_400/0/1614790512901?e=1703116800&v=beta&t=DKKR5GSj3W83a0Z7g3BkgU_SLiZdvP4NYfxft1XjMRI" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://holmeslaw.ie/images/uploads/general/Shane-Costello-300x323.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5b0d26af710699ffc2b350f0/1646220034520-B0TQ6YR5N0Z40R2POA5M/Owen.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+            </div>
+            <div class="row">
+                
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://www.cliffedekkerhofmeyr.com/export/sites/cdh/images/people/JJ-Van-Der-Walt.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://www.ts-p.co.uk/wp-content/uploads/2023/03/Henry-Richards-1-836x1024.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://kingcountynews.files.wordpress.com/2021/01/dow_headshot_lg.jpg?w=869" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+            </div>
+            <div class="row">
+                
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://www.davd.photo/wp-content/uploads/2019/03/rocco-roxie-employee-headshots-4.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://www.corporatephotographylondon.com/wp-content/uploads/2019/11/HKstrategies-1663-1-1024x683.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://www.corporatephotographylondon.com/wp-content/uploads/2019/11/HKstrategies-1210-1024x683.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+            </div>
+            <div class="row">
+               
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://www.corporatephotographylondon.com/wp-content/uploads/2019/11/Option-3-1024x683.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://www.corporatephotographylondon.com/wp-content/uploads/2019/11/HKstrategies-797-1024x683.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://www.corporatephotographylondon.com/wp-content/uploads/2019/11/HKstrategies-1029-1024x683.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+            </div>
+            <div class="row">
+               
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://www.corporatephotographylondon.com/wp-content/uploads/2019/11/HKstrategies-2582-1024x683.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://www.corporatephotographylondon.com/wp-content/uploads/2019/11/HKstrategies-855-2-1024x683.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://www.corporatephotographylondon.com/wp-content/uploads/2019/11/HKstrategies-755-1-1024x683.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+            </div>
+            <div class="row">
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://i0.wp.com/www.commercialphotographynorthwestblog.co.uk/wp-content/uploads/2020/09/headshots-examples-commercial-photography-north-west-005.jpg?resize=683%2C1024&ssl=1" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://i0.wp.com/www.commercialphotographynorthwestblog.co.uk/wp-content/uploads/2020/09/headshots-examples-commercial-photography-north-west-008.jpg?resize=1024%2C683&ssl=1" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://img.freepik.com/premium-photo/business-education-office-concept-portrait-smiling-businessman_380164-65299.jpg?w=2000" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+            </div>
+            <div class="row">
+                
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://www.viennashots.com/wp-content/uploads/2021/05/09_VS_Mitarbeiterportraits-e1559232425483.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://www.nordstudio.ch/wp/wp-content/uploads/2018/02/mitarbeiter-business-fotos_08.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="col-2"><div class="box1 box">
+                    <div class="content">
+                      <div class="image">
+                        <img src="https://www.shutterstock.com/image-photo/portrait-business-indian-woman-on-260nw-1584449311.jpg" alt="Profile Image">
+                      </div>
+                      <div class="level">
+                        <p>PRO</p>
+                      </div>
+                      <div class="text">
+                        <p class="name">Ethan Rivers</p>
+                        <p class="job_title">UI / UX Designer</p>
+                        <!-- <p class="job_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> -->
+                      </div>
+                      <div class="icons">
+                        <button>
+                          <ion-icon name="logo-dribbble"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </button>
+                        <button>
+                          <ion-icon name="logo-behance"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="button">
+                        <div>
+                          <button class="message" type="button">Message</button>
+                        </div>
+                        <div>
+                          <button class="connect" type="button">Connect</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+            </div>    
+        </div>     
+    </div>
+  <!------------------- Modal ----------------->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Chat</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <div id="row" style="margin-left: 1px;"></div>  
+      </div>
+      <div class="modal-footer">
+        <input type="text" id="input" style=" width: 378px; height: 45px; border: 0px; border-radius: 5px; background-color: rgb(240, 240, 240); padding-left: 20px;" placeholder="Type Massage">
+        <button type="button" id="send" onclick="send()" class="btn btn-dark" style="width: 70px;">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!------------- script ----------------->
+      <script>
+        // connect btn //
+        const btn = document.getElementById('btnn');
+          btn.addEventListener('click', function onClick() {
+            btn.style.backgroundColor = 'green';
+            btn.style.color = 'white';
+            btn.textContent = 'Connected';
+          });
+        // btn send //
+        function send()
+        {
+            var text=document.getElementById("input").value;
+            var mypg=document.createElement("p");
+            mypg.innerHTML=text;
+            document.getElementById("row").appendChild(mypg); 
+            document.getElementById("input").value='';
+            var elem = document.getElementById('row');
+            elem.style.setProperty('border','2px solid black','');
+        }
+      </script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>   <!---icons link---->
+</body>
+</html>

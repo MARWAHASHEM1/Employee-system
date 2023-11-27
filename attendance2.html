@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee dashboard</title>
+    <!-- style -->
+    <link rel="stylesheet" href="employee.css">
+ <!-- Bootstrap CSS library -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+     crossorigin="anonymous"></script>
+<!-- JS library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+     crossorigin="anonymous"></script>
+ <!-- Latest compiled JavaScript library -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+     crossorigin="anonymous"></script>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+     <!-- ----------------------------------------------------------------
+  ----------------------------------------------------------------------- -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-image: url(photo/istockphoto-1397028825-612x612.jpg);">
+          <div class="container-fluid">
+                <div class="row" style=" display: flex; align-content: center; align-items: baseline; justify-content: space-between; ">
+                  <!-- col-2 in row -->
+                  <div class="col-2" style="background-color: rgb(255, 255, 255); height: 97%; position: fixed; border:10px; border-radius: 30px; margin-top: 10px;" >
+                    <a class="navbar-brand" style=" font-weight: bolder; font-size: 25px; height: 70px; margin-top:5px;  position: fixed;" href="#"><span><img src="photo/systems.png" style="width: 110px; height: 60px; margin-left: 40px;"></span> </a>
+                      <div class="list-group" style="position: fixed; margin-top: 85px;">
+                          <div class="post">
+                            <i class="fa-solid fa-arrow-trend-up fa-beat" style="color: #000000;"></i><a href="dashemployee.html" class="tap" > DashBoard</a>
+                          </div>
+                          <!-- <div class="post">
+                            <i class="fa-solid fa-users fa-beat" style="color: #000000;"></i><a href="c:\Users\dell\Desktop\employee system\employees.html" class="tap"> EMPLOYEES</a>
+                          </div> -->
+                          <div class="post">
+                            <i class="fa-regular fa-file fa-beat" style="color: #000000;"></i><a href="attendance2.html" class="tap"> ATTENDANCE</a>
+                          </div>
+                          <div class="post">
+                            <i class="fa-solid fa-money-bills fa-beat" style="color: #000000;"></i><a href="expances2.html" class="tap"> EXPENSES</a>
+                          </div>
+                          <!-- <div class="post">
+                          <img src="c:\Users\dell\Desktop\employee system\photo\file-earmark.svg" style="height: 25px; width: 25px;" style="height: 30px;"><a href="#" class="tap"> PROJECTS</a>
+                          </div> -->
+                          <div class="post">
+                            <i class="fa-solid fa-business-time fa-beat" style="color: #000000;"></i></i><a href="time req2.html" class="tap"> Time Out Requests</a>
+                          </div>
+                          <div class="post">
+                            <i class="fa-sharp fa-regular fa-file-lines fa-beat" style="color: #000000;"></i><a href="#" class="tap"> Projects</a>
+                          </div>
+                          <!-- <div class="post">
+                            <i class="fa-solid fa-user-plus fa-beat" style="color: #000000;"></i><a href="c:\Users\dell\Desktop\employee system\application.html" class="tap" style="font-size: 14px;"> EMPLOYMENT APPLICATION</a>
+                          </div> -->
+                          <!-- <div class="post">
+                          <img src="c:\Users\dell\Desktop\employee system\photo\hand-index.svg"  style="height: 25px; width: 25px;" style="height: 30px;"><a href="c:\Users\dell\Desktop\employee system\register.html" class="tap"> REGISTER</a>
+                          </div> -->
+                          <div class="post">
+                            <i class="fa-solid fa-right-from-bracket fa-beat" style="color: #000000;"></i><a href="login.html" class="tap"> Log Out</a>
+                          </div>
+                        </div>
+                  </div>
+                  <!-- col-10 in row-->
+                      <div class="col-10" style=" height: 100%; margin-left: 245px;">
+                        <div class=" nav navbar-expand-lg" style="margin-top: 10px; background-color: rgba(255, 255, 255, 0.866); ;">
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent-555"> 
+                           
+                            <ul class="navbar-nav ml-auto nav-flex-icons">
+                              <form class="form-inline  " style="margin-right: 10px;">   
+                                <input class="form-control form-control-sm  w-85" style="margin-right: 10px;" type="text" placeholder="Search" aria-label="Search">
+                                <i class="fas fa-search" style="color: black;" aria-hidden="true"></i>   
+                              </form>
+                              <li class="nav-item avatar">
+                                <a class="nav-link p-0" href="Edit profile employee.html">
+                                  <img src="c:\Users\dell\Desktop\employee system\photo\3b2f3b702d81fbab4d5806422988299f.jpg" class="rounded-circle z-depth-0" alt="avatar image" height="35">
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+
+                        <!-- ----------------------------------------------------------------- -->
+
+
+                        <div class="container mt-5">
+                            <div class="row text-center">
+                              <div class="col">
+                                <h2 style="margin-left: 68px; color: #000000;">My Attendance </h2>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="container" style=" margin-left: 16px;  margin-bottom: 10px;">
+                            <div id="main" class="container">
+                              <div class="row text-center">
+                                <div class="col">
+                                  <div id="inner">
+                                    <label class="mt-5">Name</label>
+                                    <input id="employeeName" class="form-control">
+                                    <label class="mt-3">Employee Id</label>
+                                    <input id="employeeId" class="form-control" type="number">
+                                    <button id="submit" class="btnnnn">Submit</button>
+                                  </div>
+                                  <p id="showClockIn" class="mt-3"></p>
+                                  <button id="goBack" class="btnnnnn">Go Back</button>
+                                  <button id="showSchedule" class="btnnnnn">Show Schedule</button>
+                                  <button id="hideSchedule" class="btnnnnn">Hide Schedule</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div id="schedule" class="container mt-5">
+                            <table id="newTable" class="table table-bordered table-hover">
+                              <thead class="theader">
+                                <tr>
+                                  <th scope="col">Employee ID</th>
+                                  <th scope="col">Employee Name</th>
+                                  <th scope="col">Employee Duties</th>
+                                  <th scope="col">Checked-In</th>
+                                </tr>
+                              </thead>
+                              <tbody id="newRow">
+                              </tbody>
+                            </table>
+                          </div>
+                 
+                 
+                 
+                      </div>
+                      </div>
+                          <!-- --------------------------------------------------------------- -->                                 
+         </div>
+         <script>
+            /* Work clock-in/Schedule Viewer App v1.0. Written By: Anthony Bernard */
+          //Variables
+          let display = document.getElementById("showClockIn");
+          let loading = document.getElementById("loadingWheel");
+          let inner = document.getElementById("inner");
+          let goBack = document.getElementById("goBack");
+          let mainApp = document.getElementById("main");
+          let schedule = document.getElementById("schedule");
+          let showScheduleButton = document.getElementById("showSchedule");
+          let hideScheduleButton = document.getElementById("hideSchedule");
+          
+          //Object template
+          function User(newUser, newId, newRole, logInTime) {
+            this.newUser = newUser;
+            this.newId = newId;
+            this.newRole = newRole;
+            this.logInTime = logInTime;
+          }
+          
+          //User clicks submit
+          document.getElementById("submit").addEventListener("click", signOn);
+          function signOn() {
+            //Variables
+            let date = new Date();
+            let dateString = date.toDateString();
+            let time = date.toLocaleTimeString();
+            let newName = document.getElementById("employeeName");
+            let newId = document.getElementById("employeeId");
+            let roles = [
+              "Manager"
+            ];
+            let rolePicker = Math.floor(Math.random() * roles.length);
+            let pickedRole = roles[rolePicker];
+          
+            //Validate fields
+            if (newName.value === "" || newId.value === "") {
+              display.innerText = `Please fill out both fields.`;
+              return;
+            }
+            //Create instance of User object
+            let addEmployee = new User(newName.value, newId.value, pickedRole, time);
+          
+            display.innerHTML = `${newName.value} checked-in at ${time} on ${dateString}`;
+          
+            //Create rows in table
+            let createRow = document.getElementById("newRow");
+            let row = createRow.insertRow(-1);
+            let cell1 = row.insertCell(0);
+            let cell2 = row.insertCell(0);
+            let cell3 = row.insertCell(0);
+            let cell4 = row.insertCell(0);
+            cell1.innerHTML = `${time}`;
+            cell2.innerHTML = `${pickedRole}`;
+            cell3.innerHTML = `${newName.value}`;
+            cell4.innerHTML = `${newId.value}`;
+          
+            //Hide or show elements
+            inner.style.display = "none";
+            newName.value = "";
+            newId.value = "";
+            goBack.style.display = "inline";
+            console.log(addEmployee);
+          }
+          
+          goBack.addEventListener("click", function() {
+            inner.style.display = "inline";
+            goBack.style.display = "none";
+            display.innerHTML = "";
+          });
+          
+          showScheduleButton.addEventListener("click", function() {
+            schedule.style.display = "block";
+            showScheduleButton.style.display = "none";
+            hideScheduleButton.style.display = "inline";
+          });
+          
+          hideScheduleButton.addEventListener("click", function() {
+            schedule.style.display = "none";
+            hideScheduleButton.style.display = "none";
+            showScheduleButton.style.display = "inline";
+          });
+          
+          </script>
+    
+     
+</body>
+</html>
+
+
+
+
+

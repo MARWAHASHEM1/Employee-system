@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses</title>
+    <link rel="stylesheet" href="employee.css">
+ <!-- Bootstrap CSS library -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+     crossorigin="anonymous"></script>
+<!-- JS library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+     crossorigin="anonymous"></script>
+ <!-- Latest compiled JavaScript library -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+     crossorigin="anonymous"></script>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+     <!-- ----------------------------------------------------------------
+  ----------------------------------------------------------------------- -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        :root{
+ 
+  --grayColor: #f8f8f6;
+  --whiteColor: #fff;
+  --blackColor: #000000;
+}
+body{
+  background-color: var(--grayColor);
+  font-family: Helvetica;
+  color: var(--blackColor);
+  font-size: 14px;
+}
+*{
+  box-sizing: border-box;	
+}
+.selectOption{
+  display: flex;
+}
+.selectElement{
+  margin-right: 10px;
+}
+input[type="checkbox"]{
+  display: none;
+}
+input[type="checkbox"]+label{
+  position: relative;
+  padding-left: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+input[type="checkbox"]+label::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: var(--blackColor);
+  padding: 5px;
+}
+input[type="checkbox"]:checked+label::after{
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  border-right: 2px solid var(--whiteColor);
+  border-bottom: 2px solid var(--whiteColor);
+  height: 6px;
+  width: 3px;
+  transform: rotate(45deg);
+  color: #f8f8f6;
+  padding: 2px;
+}
+.main{
+    width: 1490px;
+    margin: 20px auto;
+    background-color:  #ffffff80;
+    padding: 18px;
+    border-radius: 8px;
+}
+input[type="number"],
+input[type="date"],
+input[type="text"]{
+  background-color: var(--grayColor);
+  border:2px solid var(--blackColor);
+  padding:10px 15px;
+  border-radius: 4px;
+  color: #000000;
+  font-size: 14px;
+  height: 40px;
+}
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="text"]:focus{
+  outline:none;
+}
+button,
+input[type="submit"]{
+  background-color: var(--blackColor);
+  border:2px solid var(--blackColor);
+  padding:10px 15px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.remove{
+  padding:4px 8px;
+}
+form{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+form input{
+  flex: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.row>div {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.selectOption {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+.deleteBtn{
+  text-decoration: none;
+  color: #000000;
+}
+.table-responsive{
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 10px;
+}
+.expense-data {
+  width: 100%;
+  border-spacing: 0;
+}
+th{
+  background-color: var(--grayColor);
+  padding:10px 5px;
+  color: #000000;
+  text-align: left;
+}
+
+td{
+  padding:10px 5px;
+}
+tr:nth-child(odd) {
+  background: var(--grayColor);
+}
+th:first-child,
+td:first-child {
+  width: 50px;
+}
+th:last-child,
+td:last-child {
+  text-align: right;
+}
+    </style>
+
+</head>
+<body style="background-image: url(photo/istockphoto-1397028825-612x612.jpg);">
+    <div class="container-fluid">
+        <div class="row" >
+          <div class="col-2" style="background-color: rgb(255, 255, 255); height: 97%; position: fixed; border:10px; border-radius: 30px; margin-top: 10px; left: 1px;" >
+            <a class="navbar-brand" style=" font-weight: bolder; font-size: 25px; height: 70px; margin-top:5px;  position: fixed;" href="#"><span><img src="photo/systems.png" style="width: 110px; height: 60px; margin-left: 40px;"></span> </a>
+              <div class="list-group" style="position: fixed; margin-top: 70px;">
+                  <div class="post">
+                    <i class="fa-solid fa-arrow-trend-up fa-beat" style="color: #000000;"></i><a href="dashemployee.html" class="tap"> DashBoard</a>
+                  </div>
+                  <!-- <div class="post">
+                    <i class="fa-solid fa-users fa-beat" style="color: #000000;"></i><a href="c:\Users\dell\Desktop\employee system\employees.html" class="tap"> EMPLOYEES</a>
+                  </div> -->
+                  <div class="post">
+                    <i class="fa-regular fa-file fa-beat" style="color: #000000;"></i><a href="attendance2.html" class="tap"> ATTENDANCE</a>
+                  </div>
+                  <div class="post">
+                    <i class="fa-solid fa-money-bills fa-beat" style="color: #000000;"></i><a href="expances2.html" class="tap"> EXPENSES</a>
+                  </div>
+                  <!-- <div class="post">
+                  <img src="c:\Users\dell\Desktop\employee system\photo\file-earmark.svg" style="height: 25px; width: 25px;" style="height: 30px;"><a href="#" class="tap"> PROJECTS</a>
+                  </div> -->
+                  <div class="post">
+                    <i class="fa-solid fa-business-time fa-beat" style="color: #000000;"></i></i><a href="time req2.html" class="tap"> Time Out Requests</a>
+                  </div>
+                  <div class="post">
+                    <i class="fa-sharp fa-regular fa-file-lines fa-beat" style="color: #000000;"></i><a href="c:\Users\dell\Desktop\employee system\supmited app.html" class="tap"> Projects</a>
+                  </div>
+                  <!-- <div class="post">
+                    <i class="fa-solid fa-user-plus fa-beat" style="color: #000000;"></i><a href="c:\Users\dell\Desktop\employee system\application.html" class="tap" style="font-size: 14px;"> EMPLOYMENT APPLICATION</a>
+                  </div> -->
+                  <!-- <div class="post">
+                  <img src="c:\Users\dell\Desktop\employee system\photo\hand-index.svg"  style="height: 25px; width: 25px;" style="height: 30px;"><a href="c:\Users\dell\Desktop\employee system\register.html" class="tap"> REGISTER</a>
+                  </div> -->
+                  <div class="post">
+                    <i class="fa-solid fa-right-from-bracket fa-beat" style="color: #000000;"></i><a href="login.html" class="tap"> Log Out</a>
+                  </div>
+                </div>
+          </div>
+          <!--  -->
+  
+            <div class="col-10" style=" height: 100%; margin-top: 10px; left: 256px; " >
+                <div class=" nav navbar-expand-lg" style="margin-top: 10px; background-color: #ffffff80; border: 0px; border-radius: 6px; padding: 10px;">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+                      <form class="form-inline  " style="margin-right: 10px;">
+                        <input class="form-control form-control-sm  w-85" style="margin-right: 10px; border: 0px; border-radius: 5px;"  type="text" placeholder="Search" aria-label="Search">
+                        <i class="fas fa-search" style="color: black;" aria-hidden="true"></i>
+                      </form>
+                      <li class="nav-item avatar">
+                        <a class="nav-link p-0" href="Edit profile employee.html">
+                          <img src="c:\Users\dell\Desktop\employee system\photo\3b2f3b702d81fbab4d5806422988299f.jpg" class="rounded-circle z-depth-0" alt="avatar image" height="35">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                    <h1>My Expenses</h1>
+                    <main class="main" style="width: 1224px;">
+                        <form action="">
+                            <input type="text" class="name" style="border: 0px; border-radius: 5px;" placeholder="Enter expense name" name="name">
+                            <input type="date" class="expenseDate" style="border: 0px; border-radius: 5px;" placeholder="dd-mm-yyyy" name="date">
+                            <input type="number" class="amount" style="border: 0px; border-radius: 5px;" placeholder="Enter Amount" name="expense">
+                            <input type="submit" id="submitbtn" style="border: 0px; border-radius: 5px;" name="submit" value="Submit">
+                        </form>
+                        <div class="row">
+                            <!-- <div class="selectOption">
+                                <div class="selectElement">
+                                    <input type="checkbox" id="selectChecked" name="">
+                                    <label for="selectChecked">Select All</label>
+                                </div>
+                                <div class="deleteElement">
+                                    <a class="deleteBtn" href="#"> Delete</a>
+                                </div>
+                            </div>   -->
+
+                            <div class="searchBox">
+                              <input type="text" name="search" style="border: 0px; border-radius: 5px;" placeholder="Search Name.." class="searchName">
+                          </div>
+
+                            <button type="button" class="btn " style="background-color: #000000;color: #f8f8f6;border: 0px;border-radius: 5px;margin-left: 847px;margin-bottom: -4px;padding-left: 31px;padding-right: 31px;margin-right: 0px;padding-top: 7px;padding-bottom: 7px;margin-top: -40px;" data-toggle="modal" data-target="#exampleModal">Export</button>
+                             <!-- <button   style="border: 0px; border-radius: 5px;"  >Export</button> -->
+
+                            
+                            
+                        </div>
+                        <div class="table-responsive">
+                            <table class="expense-data">
+                                <tbody>
+                                    <tr>
+                                        <th></th>
+                                        <th>Expense Name</th>
+                                        <th>Amount</th>
+                                        <th>Date</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </main>
+
+                </div>
+              </div>
+        </div>
+    </div>
+    <!-- modal -->
+    
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Share</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <a  href="#"><i class="fa-solid fa-print" style="color: #000000;"></i>  <span style="font-size: large; color: #000000;">Print</span></a><br>
+       <a  href="#"><i class="fa-solid fa-envelope" style="color: #000000;"></i> <span style="font-size: large; color: #000000;">Send</span></a> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" style="background-color: #000000; color: #f8f8f6; border: 0px; border-radius: 5px;" class="btn " data-dismiss="modal">Ok</button>
+        <!-- <button type="button" style="background-color: #37373743; color: #f8f8f6; border: 0px; border-radius: 5px;" class="btn ">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="expences.js"></script>
+</body>
+</html>

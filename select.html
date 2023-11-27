@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="select.css">
+ <!-- Bootstrap CSS library -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+     crossorigin="anonymous"></script>
+<!-- JS library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+     crossorigin="anonymous"></script>
+ <!-- Latest compiled JavaScript library -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+     crossorigin="anonymous"></script>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+   
+        <h1 style="text-align: center; margin-top: 35px;"> Job Application Form </h1>
+        <form accept-charset="UTF-8" action="https://getform.io/f/256aaa5a-65ed-48e8-a53c-faff9d221b0d" method="POST" enctype="multipart/form-data" target="_blank">
+    <div class="container">
+        <div class="row" >
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="exampleInputName">Full Name*</label>
+                    <input type="text" name="fullname" class="form-control" id="exampleInputName" placeholder="" required="required" style="bor">
+                  </div>
+            </div>
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1" required="required">Email address*</label>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1" required="required">Phone Number*</label>
+                    <input type="number" name="phone" class="form-control" id="exampleInputEmail1" aria-describedby="" placeholder="" >
+                  </div>
+            </div>
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="exampleInputName">Address*</label>
+                    <input type="text" name="fullname" class="form-control" id="exampleInputName" placeholder="" required="required">
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div id="div-department" style="margin-left: 10px;"><br>
+                    <p class="vis2" style="font-weight: bolder;">Which Department are you applying for?</p>
+                    <label for="radio-eng" class="vis2">		
+                    <input id="radio-eng" name="department" type="radio" value="engineering">
+                    Engineering
+                    </label><br>
+                    <label for="radio-acct"class="vis2">
+                    <input id="radio-acct" name="department" type="radio" value="accounting">
+                    Accounting
+                </label><br>
+                    <label for="radio-hr"class="vis2">
+                    <input id="radio-hr" name="department" type="radio" value="hr">
+                    Human Resources
+                </label><br>
+                    <label for="radio-rsrch"class="vis2">
+                    <input id="radio-rsch" name="department" type="radio" value="research">
+                    Markting
+                </label>	<br>
+                    <label for="radio-rsrch"class="vis2">
+                    <input id="radio-rsch" name="department" type="radio" value="research">
+                    Research and Development
+                </label>	<br>
+                    <label for="radio-rsrch"class="vis2">
+                    <input id="radio-rsch" name="department" type="radio" value="research">
+                    sales
+                </label>	<br>
+                </label>
+                    <label for="radio-rsrch"class="vis2">
+                    <input id="radio-rsch" name="department" type="radio" value="research">
+                    public Relations
+                </label>	<br>
+                </div>
+
+            </div>
+            <div class="col-6">
+                <div id="div-job" style="margin-left: 10px; margin-top: 25px;">
+                    <label for="job" class="vis2" style="font-weight: bolder;">Which type of job are you interested in?</label><br>
+                    <select name="job" id="dropdown" class="vis1">
+                        <option disable selected value>Select a job type</option>
+                        <option value="internship">Internship</option>
+                        <option value="part-time">Part-time</option>
+                        <option value="full-time">Full-time</option>
+                        <option value="other">Other</option>	
+                    </select>
+                </div>
+            </div>
+            
+            <!-- ---------------------------- -->    
+            
+        </div>
+        <div class="row">
+            <div class="row align-items-center pt-1 pb-1">
+                <div class="col-md-3 ps-5">
+                  <h6 class="mb-0" style="font-size: large; font-weight: bolder;">Upload CV</h6>
+                </div>
+                <div class="col-md-9 pt-1 pb-1"> 
+                 <input class="form-control form-control-md" id="formFileLg" type="file" style=" height: 46.6px;" />
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="px-5 pt-1 pb-1">
+                <button type="submit" class="btn " style="background-color: rgb(255, 255, 255); color: #000000; padding: 30px; width: 223px; border: 0px; border-radius: 5px; margin-left: 390px; font-size: larger;">Send application</button>
+              </div>
+        </div>
+    </div>
+    
+</body>
+</html>
